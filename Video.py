@@ -20,7 +20,7 @@ class Video:
             raise Exception("Not read file")
         # Initialize frames as an empty list
         frames = []
-        for i in range():
+        for i in range(total_frames):
             # Read video frame by frame
             ret, frame = cap.read()
 
