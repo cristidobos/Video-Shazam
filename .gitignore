@@ -1,4 +1,4 @@
-dataset/*
+resource/lib/publicdata/Code/dataset/*
 
-!dataset/
+!resource/lib/publicdata/Code/dataset/
 

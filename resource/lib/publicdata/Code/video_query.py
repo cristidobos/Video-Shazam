@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import argparse
 import video_search
-import numpy as np
-import cv2
 import glob
 from scipy.io import wavfile
 from video_tools import *

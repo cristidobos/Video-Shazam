@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from scipy.io import wavfile
-import numpy as np
 import matplotlib.pyplot as plt
 import argparse
 import feature_extraction as ft
@@ -17,13 +16,13 @@ args = parser.parse_args()
 # Read the wavfile
 fs,data = wavfile.read(args.wav_path)
 
-print 'Processing wavfile: ' + args.wav_path + ' ... '
+print('Processing wavfile: ' + args.wav_path + ' ... ')
 
-print 'Calculating MFCCs ... '
-# extract mfcc coefficents 
+print('Calculating MFCCs ... ')
+# extract mfcc coefficents
 ceps, mspec, spec = ft.extract_mfcc(data, fs)
 
-print 'Generating spectogram ... '
+print('Generating spectogram ... ')
 
 # create pyplot figure with custom title 
 fig = plt.figure()

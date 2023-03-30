@@ -5,7 +5,6 @@ import pickle
 import cv2
 #!%matplotlib notebook
 import matplotlib.pyplot as plt
-import numpy as np
 import feature_extraction as ft
 import sys
 import image_search

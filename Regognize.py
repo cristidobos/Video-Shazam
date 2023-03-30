@@ -24,7 +24,7 @@ def print_file_names(mp4_files):
     print("\n----------------------\n")
 
 
-path_dataset = 'dataset/'
+path_dataset = 'resource/lib/publicdata/Code/dataset/'
 path_training = 'training/recognition/'
 dataset_files = get_mp4_files(path_dataset)
 # print_file_names(dataset_files)

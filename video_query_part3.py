@@ -4,16 +4,14 @@ sys.path.append('../resource/lib/publicdata/Code')
 
 #!/usr/bin/env python
 import argparse
-from resource.lib.publicdata.Code import video_search
-import numpy as np
-import cv2
+import video_search
 import glob
 from scipy.io import wavfile
-from resource.lib.publicdata.Code.video_tools import *
-from resource.lib.publicdata.Code import feature_extraction as ft
+from video_tools import *
+import feature_extraction as ft
 import sys
 import os
-from resource.lib.publicdata.Code.video_features import *
+from video_features import *
 import matplotlib.pyplot as plt
 
 features = ['colorhists', 'mfccs', 'both']

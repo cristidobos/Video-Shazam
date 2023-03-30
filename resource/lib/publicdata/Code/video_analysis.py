@@ -1,9 +1,5 @@
-import numpy as np
 import cv2
-import matplotlib.pyplot as plt
 from video_tools import *
-import feature_extraction as ft
-from scikits.talkbox.features import mfcc
 
 # Path to video file to analyse 
 video = '../Videos/video_07.mp4'

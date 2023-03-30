@@ -2,11 +2,7 @@
 
 import os
 import sys
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
 import argparse
-import pickle
 import glob
 import feature_extraction as ft
 from scipy.io.wavfile import read
@@ -63,7 +59,9 @@ def process_videos(video_list, indx):
     for video in video_list:
         progress_count += 1
         print('processing: ', video, ' (', progress_count, ' of ', total, ')')
-        cap = cv2.VideoCapture(video)
+        # cap = cv2.VideoCapture(video)
+        cap = cv2.VideoCapture('C:\Projects Github\Video-Shazam\\training\\video1.mp4')
+
         frame_rate = get_frame_rate(video)
         total_frames = get_frame_count(video)
         total_audio_frames = get_frame_count_audio(video)
