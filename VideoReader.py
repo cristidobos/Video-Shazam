@@ -80,13 +80,13 @@ class Video:
         plt.show()
 
 
-path = "training/video10.mp4"
+path = "training/video5.mp4"
 if __name__ == '__main__':
     video = Video(path)
     cropped = CropVideo.crop_video(video)
     # CropVideo.test_shit(video)
-    cropped2 = CropVideo.crop_video(cropped)
-    CropVideo.play_video(cropped2)
+    # cropped2 = CropVideo.crop_video(cropped)
+    # CropVideo.play_video(cropped)
     # for i in range(10):
     #     plt.imshow(cropped.frames[i])
     #     plt.show()
